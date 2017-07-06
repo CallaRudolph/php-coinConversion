@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+    <title>Conversion Success!</title>
+  </head>
+  <body>
+    <div class='container'>
+      <h1><em>You entered:</em></h1>
+      <h4>{{ input }} cents</h4>
+      <h1><em>You need to come up with:</em></h1>
+      <ul>
+        {% for key in coins|keys %}
+          <li><h5>{{ key }}: {{ coins[key] }}</h5></li>
+        {% endfor %}
+      </ul>
+      <br>
+      <h3><a href='/'>Do it again!</a></h3>
+    </div>
+  </body>
+</html>
