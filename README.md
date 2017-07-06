@@ -29,16 +29,16 @@ This web application allows users to input a number and receive the proper Ameri
     * Output: "Please fill out this field."
 * It returns the input value in pennies.
     * Input: '3'
-    * Output: 'pennies: 3'
+    * Output: '3 pennies'
 * It returns the input value in nickels and pennies.
     * Input: '8'
-    * Output: 'nickels: 1; pennies: 3'
+    * Output: '1 nickels; 3 pennies'
 * It returns the input value in dimes, nickels, and pennies.
     * Input: '16'
-    * Output: 'dimes: 1; nickels: 1; pennies: 1'
+    * Output: '1 dimes; 1 nickels; 1 pennies'
 * It returns the input value in quarters, dimes, nickels, and pennies.
     * Input: '41'
-    * Output: 'quarters: 1; dimes: 1; nickels: 1; pennies: 1'
+    * Output: '1 quarters; 1 dimes; 1 nickels; 1 pennies'
 
 ## Technologies Used
 

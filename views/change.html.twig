@@ -11,7 +11,7 @@
       <h1><em>You need to come up with:</em></h1>
       <ul>
         {% for key in coins|keys %}
-          <li><h5>{{ key }}: {{ coins[key] }}</h5></li>
+          <li><h5>{{ coins[key] }} {{ key }}</h5></li>
         {% endfor %}
       </ul>
       <br>
