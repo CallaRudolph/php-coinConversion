@@ -41,6 +41,19 @@
             //Assert
             $this->assertEquals(['quarters' => 0, 'dimes' => 1, 'nickels' => 1, 'pennies' => 1], $result);
         }
+
+        function testMakeChangeQuarters()
+        {
+            //Arrange
+            $test_MakeChange = new MakeChange;
+            $input = '41';
+
+            //Act
+            $result = $test_MakeChange->convertCoin($input);
+
+            //Assert
+            $this->assertEquals(['quarters' => 1, 'dimes' => 1, 'nickels' => 1, 'pennies' => 1], $result);
+        }
     }
 
 ?>
