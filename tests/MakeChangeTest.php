@@ -10,10 +10,10 @@
             $input = '1.00';
 
             //Act
-            $$result = $test_MakeChange->convertCoin($input);
+            $result = $test_MakeChange->convertCoin($input);
 
             //Assert
-            $this->assertEquals("Your number must be less than $1.00", $result);
+            $this->assertEquals(false, $result);
         }
     }
 
