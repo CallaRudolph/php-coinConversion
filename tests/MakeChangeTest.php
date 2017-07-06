@@ -7,13 +7,26 @@
         {
             //Arrange
             $test_MakeChange = new MakeChange;
+            $input = '4';
+
+            //Act
+            $result = $test_MakeChange->convertCoin($input);
+
+            //Assert
+            $this->assertEquals(['quarters' => 0, 'dimes' => 0, 'nickels' => 0, 'pennies' => 4], $result);
+        }
+
+        function testMakeChangeNickels()
+        {
+            //Arrange
+            $test_MakeChange = new MakeChange;
             $input = '8';
 
             //Act
             $result = $test_MakeChange->convertCoin($input);
 
             //Assert
-            $this->assertEquals(['quarters' => 0, 'dimes' => 0, 'nickels' => 0, 'pennies' => 8], $result);
+            $this->assertEquals(['quarters' => 0, 'dimes' => 0, 'nickels' => 1, 'pennies' => 3], $result);
         }
     }
 
